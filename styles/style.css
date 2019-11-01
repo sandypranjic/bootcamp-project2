@@ -1,0 +1,465 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body, h1, h2, h3, h4, div, p, span, article, aside, section, img, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 10%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.headerBackgroundContainer {
+  width: 100vw;
+  height: 80vh;
+  background-image: url("../assets/header-image.jpg");
+  background-size: cover;
+  background-position: cover;
+  position: relative;
+}
+
+.floatingImageContainer {
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  max-height: 10vh;
+}
+
+.floatingImage {
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.floatingImage img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background-color: transparent;
+}
+
+.innerHeaderContainer {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.topNavList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.topNavList li a {
+  text-transform: uppercase;
+  color: #0D0D0D;
+  font-size: 2rem;
+  padding: 10px 20px;
+  font-weight: 700;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: block;
+}
+
+.topNavList li a:hover {
+  color: #FFFFFF;
+  background-color: #4C0341;
+}
+
+h1, h3 {
+  font-family: "Pompiere", cursive;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 12rem;
+  color: #4C0341;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h3 span {
+  display: block;
+}
+
+h1 span {
+  display: block;
+  line-height: 0.7;
+}
+
+.logoContainer, .topNav, .mainHeadingContainer {
+  width: 50%;
+}
+
+.mainHeadingContainer {
+  padding: 100px 0;
+}
+
+.underTheSea {
+  background-color: #FAE5FF;
+  padding: 13% 0;
+  text-align: center;
+}
+
+.underTheSea p {
+  color: #0D0D0D;
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 1.8;
+  padding: 20px 0;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #4C0341;
+  font-family: "Pompiere", cursive;
+  font-size: 6rem;
+}
+
+.findOutMore {
+  display: inline-block;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #4C0341;
+  font-size: 2rem;
+}
+
+.newAdditionsContainer, .tooManyOptionsContainer {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.newAdditionsContainer .newAdditionsText, .newAdditionsContainer .tooManyOptionsText, .tooManyOptionsContainer .newAdditionsText, .tooManyOptionsContainer .tooManyOptionsText {
+  width: 50%;
+}
+
+.newAdditionsContainer .newAdditionsText p, .newAdditionsContainer .tooManyOptionsText p, .tooManyOptionsContainer .newAdditionsText p, .tooManyOptionsContainer .tooManyOptionsText p {
+  color: #0D0D0D;
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.newAdditionsContainer .newAdditionsText h4, .newAdditionsContainer .tooManyOptionsText h4, .tooManyOptionsContainer .newAdditionsText h4, .tooManyOptionsContainer .tooManyOptionsText h4 {
+  color: #0D0D0D;
+  font-family: "Pompiere", cursive;
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.newAdditionsContainer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.tooManyOptionsContainer {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.readMore {
+  display: inline-block;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #882C07;
+  font-size: 2rem;
+}

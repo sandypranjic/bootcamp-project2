@@ -26,13 +26,10 @@ html {
 }
 
 .wrapper {
-    width: 90%;
-    margin: 0 5%;
+    width: 80%;
+    margin: 0 10%;
 }
 
-.innerHeaderContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+body {
+    font-family: $sans;
 }
-

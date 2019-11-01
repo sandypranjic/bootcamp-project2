@@ -1,0 +1,71 @@
+.underTheSea {
+    background-color: $pink;
+    padding: 13% 0;
+    text-align: center;
+    p {
+        color: $black;
+        font-size: 2.3rem;
+        font-weight: $regular;
+        line-height: 1.8;
+        padding: 20px 0;
+    }
+}
+
+h2 {
+    text-transform: uppercase;
+    color: $plum;
+    font-family: $cursive;
+    font-size: 6rem;
+}
+
+.findOutMore {
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $plum;
+    font-size: 2rem;
+}
+
+.newAdditionsContainer, .tooManyOptionsContainer {
+    width: 100%;
+    padding: 100px 0;
+    background-color: $white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    .newAdditionsText, .tooManyOptionsText {
+        width: 50%;
+        p {
+            color: $black;
+            font-size: 2.3rem;
+            font-weight: $regular;
+            line-height: 1.8;
+        }
+        h4 {
+            color: $black;
+            font-family: $cursive;
+            font-size: 6rem;
+            text-transform: uppercase;
+            font-weight: $regular;
+        }
+    }
+}
+
+.newAdditionsContainer {
+    justify-content: flex-end;
+
+}
+
+.tooManyOptionsContainer {
+    justify-content: flex-start;
+}
+
+.readMore {
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $brown;
+    font-size: 2rem;
+}
