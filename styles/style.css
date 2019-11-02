@@ -379,18 +379,24 @@ h1 span {
   padding: 100px 0;
 }
 
-.underTheSea {
-  background-color: #FAE5FF;
-  padding: 13% 0;
+footer {
+  width: 100%;
+  background-color: #882C07;
   text-align: center;
+  padding: 10px 0;
 }
 
-.underTheSea p {
+footer p {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+p {
   color: #0D0D0D;
   font-size: 2.3rem;
   font-weight: 400;
   line-height: 1.8;
-  padding: 20px 0;
 }
 
 h2 {
@@ -398,6 +404,17 @@ h2 {
   color: #4C0341;
   font-family: "Pompiere", cursive;
   font-size: 6rem;
+  font-weight: 400;
+}
+
+.underTheSea {
+  background-color: #FAE5FF;
+  padding: 13% 0;
+  text-align: center;
+}
+
+.underTheSea p {
+  padding: 20px 0;
 }
 
 .findOutMore {
@@ -428,13 +445,6 @@ h2 {
   width: 50%;
 }
 
-.newAdditionsContainer .newAdditionsText p, .newAdditionsContainer .tooManyOptionsText p, .tooManyOptionsContainer .newAdditionsText p, .tooManyOptionsContainer .tooManyOptionsText p {
-  color: #0D0D0D;
-  font-size: 2.3rem;
-  font-weight: 400;
-  line-height: 1.8;
-}
-
 .newAdditionsContainer .newAdditionsText h4, .newAdditionsContainer .tooManyOptionsText h4, .tooManyOptionsContainer .newAdditionsText h4, .tooManyOptionsContainer .tooManyOptionsText h4 {
   color: #0D0D0D;
   font-family: "Pompiere", cursive;
@@ -462,4 +472,150 @@ h2 {
   color: #FFFFFF;
   background-color: #882C07;
   font-size: 2rem;
+}
+
+.generalInfo {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: #FAE5FF;
+}
+
+.generalInfoContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.generalInfoContainer .locations, .generalInfoContainer .community, .generalInfoContainer .blog, .generalInfoContainer .getInTouch {
+  width: 50%;
+}
+
+.generalInfoContainer .locations .generalInfoInnerContainer, .generalInfoContainer .community .generalInfoInnerContainer, .generalInfoContainer .blog .generalInfoInnerContainer, .generalInfoContainer .getInTouch .generalInfoInnerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 25px;
+}
+
+.generalInfoContainer .locations .generalInfoInnerContainer .icon, .generalInfoContainer .community .generalInfoInnerContainer .icon, .generalInfoContainer .blog .generalInfoInnerContainer .icon, .generalInfoContainer .getInTouch .generalInfoInnerContainer .icon {
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #4C0341;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.generalInfoContainer .locations .generalInfoInnerContainer .icon i, .generalInfoContainer .community .generalInfoInnerContainer .icon i, .generalInfoContainer .blog .generalInfoInnerContainer .icon i, .generalInfoContainer .getInTouch .generalInfoInnerContainer .icon i {
+  font-size: 3.2rem;
+  color: #FFFFFF;
+}
+
+.generalInfoContainer .locations .generalInfoInnerContainer .generalInfoText, .generalInfoContainer .community .generalInfoInnerContainer .generalInfoText, .generalInfoContainer .blog .generalInfoInnerContainer .generalInfoText, .generalInfoContainer .getInTouch .generalInfoInnerContainer .generalInfoText {
+  width: calc(100% - 125px);
+  padding-left: 20px;
+}
+
+.fullBleedShoes {
+  width: 100vw;
+}
+
+.fullBleedShoes img {
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.popularThisMonth {
+  background-color: #FFFFFF;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.popularThisMonth .popularThisMonthContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.popularThisMonth .popularThisMonthContainer .popularThisMonthImgContainer {
+  width: 25%;
+}
+
+.popularThisMonth .popularThisMonthContainer .popularThisMonthTextContainer {
+  padding-left: 100px;
+  width: calc(75% - 100px);
+}
+
+.instagram {
+  width: 100%;
+  background-color: #FAE5FF;
+  padding: 100px 0;
+}
+
+.instagram .instagramContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.instagram .instagramContainer .instagramImgContainer {
+  width: calc(100% / 3 - 25px);
+}
+
+.instagram .instagramContainer .instagramImgContainer div {
+  padding-right: 25px;
+}
+
+.instagram .instagramContainer .instagramImgContainer div:nth-of-type(3) {
+  padding-right: 0;
 }
