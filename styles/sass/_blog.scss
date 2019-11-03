@@ -7,7 +7,7 @@
     background-color: $pink;
     padding: 100px 0;
     .wrapper {
-        margin-left: 10%;
+        margin-left: 20%;
         width: auto;
     }
     h4 {
@@ -31,11 +31,26 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+        .recentPostsImg {
+            width: calc(20% + 400px);
+            background-color: $white;
+            margin-left: 0px;
+            position: relative;
+            img {
+                object-fit: cover;
+                object-position: center;
+                width: calc(100% - 20px);
+                display: block;
+            }
+        }
         .recentPosts {
             width: 400px;
-            margin-right: 0px;
+            margin-right: 200px;
             background-color: $white;
-            padding: 50px;
+            padding: 0 20px 20px 20px;
+            h5 {
+                padding-top: 20px;
+            }
             p:first-of-type {
                 margin-bottom: 20px;
             }
@@ -52,7 +67,7 @@
             }
         }
         .blogPosts {
-            width: 100%;
+            width: calc(100% - 600px);
             background-color: transparent;
             margin-top: -40vh;
             margin-left: -50px;

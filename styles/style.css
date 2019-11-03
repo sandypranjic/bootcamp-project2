@@ -748,7 +748,7 @@ h2 {
 }
 
 .blog .wrapper {
-  margin-left: 10%;
+  margin-left: 20%;
   width: auto;
 }
 
@@ -786,11 +786,31 @@ h2 {
           align-items: flex-start;
 }
 
+.blog .blogContainer .recentPostsImg {
+  width: calc(20% + 400px);
+  background-color: #FFFFFF;
+  margin-left: 0px;
+  position: relative;
+}
+
+.blog .blogContainer .recentPostsImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: calc(100% - 20px);
+  display: block;
+}
+
 .blog .blogContainer .recentPosts {
   width: 400px;
-  margin-right: 0px;
+  margin-right: 200px;
   background-color: #FFFFFF;
-  padding: 50px;
+  padding: 0 20px 20px 20px;
+}
+
+.blog .blogContainer .recentPosts h5 {
+  padding-top: 20px;
 }
 
 .blog .blogContainer .recentPosts p:first-of-type {
@@ -811,7 +831,7 @@ h2 {
 }
 
 .blog .blogContainer .blogPosts {
-  width: 100%;
+  width: calc(100% - 600px);
   background-color: transparent;
   margin-top: -40vh;
   margin-left: -50px;
