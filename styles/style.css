@@ -379,136 +379,6 @@ h1 span {
   padding: 100px 0;
 }
 
-.contactHeader {
-  background-image: url("../assets/contact-image.jpg");
-  height: 60vh;
-}
-
-.contact {
-  background-color: #FAE5FF;
-  padding: 100px 0;
-  position: relative;
-  z-index: 1000;
-}
-
-.contact .contactContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  width: 100%;
-}
-
-.contact .contactContainer .contactIcons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact .contactContainer .contactIcons i {
-  padding-right: 40px;
-  font-size: 3rem;
-  color: #4C0341;
-}
-
-.contact .contactContainer .emailPhoneAddress {
-  width: 35%;
-}
-
-.contact .contactContainer .emailPhoneAddress span {
-  font-family: "Pompiere", cursive;
-  font-size: 3rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 30px 0;
-  display: block;
-}
-
-.contact .contactContainer .emailPhoneAddress p {
-  white-space: nowrap;
-}
-
-.contact .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  min-width: 65%;
-  margin-top: -40vh;
-}
-
-.contact .form form {
-  background-color: #FFFFFF;
-  padding: 50px;
-  display: block;
-  width: 100%;
-}
-
-.contact .form form input, .contact .form form textarea {
-  font-size: 2rem;
-  padding: 10px;
-}
-
-.contact .form form input[type=text], .contact .form form input[type=email] {
-  width: calc(50% - 16px);
-  border: 0;
-  border-bottom: 2px solid #FE6F19;
-  margin: 0;
-}
-
-.contact .form form input[type=text] {
-  margin-right: 30px;
-}
-
-.contact .form form textarea {
-  display: block;
-  width: 100%;
-  height: 200px;
-  border: 2px solid #FE6F19;
-  margin: 50px 0;
-}
-
-.contact .form form button {
-  display: block;
-  width: 100%;
-  background-color: #882C07;
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  padding: 20px 0;
-  border: 0;
-  letter-spacing: 2px;
-  font-weight: 400;
-}
-
 p {
   color: #0D0D0D;
   font-size: 2.3rem;
@@ -735,6 +605,266 @@ h2 {
 
 .instagram .instagramContainer .instagramImgContainer div:nth-of-type(3) {
   padding-right: 0;
+}
+
+.contactHeader {
+  background-image: url("../assets/contact-image.jpg");
+  height: 60vh;
+}
+
+.contact {
+  background-color: #FAE5FF;
+  padding: 100px 0;
+  position: relative;
+  z-index: 1000;
+}
+
+.contact .contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 100%;
+}
+
+.contact .contactContainer .contactIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contactContainer .contactIcons i {
+  padding-right: 40px;
+  font-size: 3rem;
+  color: #4C0341;
+}
+
+.contact .contactContainer .emailPhoneAddress {
+  width: 35%;
+}
+
+.contact .contactContainer .emailPhoneAddress span {
+  font-family: "Pompiere", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 30px 0;
+  display: block;
+}
+
+.contact .contactContainer .emailPhoneAddress p {
+  white-space: nowrap;
+}
+
+.contact .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-width: 65%;
+  margin-top: -40vh;
+}
+
+.contact .form form {
+  background-color: #FFFFFF;
+  padding: 50px;
+  display: block;
+  width: 100%;
+}
+
+.contact .form form input, .contact .form form textarea {
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.contact .form form input[type=text], .contact .form form input[type=email] {
+  width: calc(50% - 16px);
+  border: 0;
+  border-bottom: 2px solid #FE6F19;
+  margin: 0;
+}
+
+.contact .form form input[type=text] {
+  margin-right: 30px;
+}
+
+.contact .form form textarea {
+  display: block;
+  width: 100%;
+  height: 200px;
+  border: 2px solid #FE6F19;
+  margin: 50px 0;
+}
+
+.contact .form form button {
+  display: block;
+  width: 100%;
+  background-color: #882C07;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 20px 0;
+  border: 0;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.blogHeader {
+  background-image: url("../assets/blog-header.jpg");
+  height: 60vh;
+}
+
+.blog {
+  background-color: #FAE5FF;
+  padding: 100px 0;
+}
+
+.blog h4 {
+  color: #0D0D0D;
+  font-family: "Pompiere", cursive;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.blog h5 {
+  color: #0D0D0D;
+  font-family: "Pompiere", cursive;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.blog .blogContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.blog .blogContainer .recentPosts {
+  width: calc(30% - 50px);
+  margin-right: 50px;
+  background-color: #FFFFFF;
+  padding: 50px;
+}
+
+.blog .blogContainer .recentPosts p:first-of-type {
+  margin-bottom: 20px;
+}
+
+.blog .blogContainer .recentPosts li {
+  list-style: disc;
+}
+
+.blog .blogContainer .recentPosts li a {
+  font-family: "Lato", sans-serif;
+  font-size: 2.3rem;
+  color: #0D0D0D;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.blog .blogContainer .blogPosts {
+  width: 70%;
+  background-color: transparent;
+  margin-top: -40vh;
+  position: relative;
+  z-index: 1000;
+}
+
+.blog .blogContainer .blogPosts .post {
+  background-color: #FFFFFF;
+  padding: 50px;
+}
+
+.blog .blogContainer .blogPosts .post p:first-of-type {
+  padding-top: 50px;
+}
+
+.blog .blogContainer .blogPosts .comments {
+  padding: 50px 0;
+}
+
+.blog .blogContainer .blogPosts .comments .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 50px;
+}
+
+.blog .blogContainer .blogPosts .comments .comment .userImg {
+  width: 20%;
+  padding: 0 50px;
+}
+
+.blog .blogContainer .blogPosts .comments .comment .userImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+}
+
+.blog .blogContainer .blogPosts .comments .comment .userComment {
+  width: 80%;
+}
+
+.blog .postDate {
+  font-size: 2.3rem;
+  font-family: "Lato", sans-serif;
+  color: #0D0D0D;
+  font-weight: 700;
 }
 
 footer {
