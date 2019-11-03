@@ -1,0 +1,89 @@
+.contactHeader {
+    background-image: url("../assets/contact-image.jpg");
+    height: 60vh;
+}
+
+.contact {
+    background-color: $pink;
+    padding: 100px 0;
+    position: relative;
+    z-index: 1000;
+    .contactContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        width: 100%;
+        .contactIcons {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            i {
+                padding-right: 40px;
+                font-size: 3rem;
+                color: $plum;
+            }
+        }
+        .emailPhoneAddress {
+            width: 35%;
+            span {
+                font-family: $cursive;
+                font-size: 3rem;
+                font-weight: $regular;
+                text-transform: uppercase;
+                padding: 30px 0;
+                display: block;
+            }
+            p {
+                white-space: nowrap;
+            }
+        }
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        min-width: 65%;
+        margin-top: -40vh;
+        form {
+            background-color: $white;
+            padding: 50px;
+            display: block;
+            width: 100%;
+            input, textarea {
+                font-size: 2rem;
+                padding: 10px;
+            }
+            input[type=text], input[type=email] {
+                width: calc(50% - 16px);
+                border: 0;
+                border-bottom: 2px solid $orange;
+                margin: 0;
+            }
+            input[type=text] {
+                margin-right: 30px;
+            }
+            textarea {
+                display: block;
+                width: 100%;
+                height: 200px;
+                border: 2px solid $orange;
+                margin: 50px 0;
+            }
+            button {
+                display: block;
+                width: 100%;
+                background-color: $brown;
+                font-size: 2rem;
+                text-transform: uppercase;
+                color: $white;
+                padding: 20px 0;
+                border: 0;
+                letter-spacing: 2px;
+                font-weight: $regular;
+            }
+        }
+    }
+}

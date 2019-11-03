@@ -379,17 +379,134 @@ h1 span {
   padding: 100px 0;
 }
 
-footer {
-  width: 100%;
-  background-color: #882C07;
-  text-align: center;
-  padding: 10px 0;
+.contactHeader {
+  background-image: url("../assets/contact-image.jpg");
+  height: 60vh;
 }
 
-footer p {
-  color: #FFFFFF;
+.contact {
+  background-color: #FAE5FF;
+  padding: 100px 0;
+  position: relative;
+  z-index: 1000;
+}
+
+.contact .contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 100%;
+}
+
+.contact .contactContainer .contactIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contactContainer .contactIcons i {
+  padding-right: 40px;
+  font-size: 3rem;
+  color: #4C0341;
+}
+
+.contact .contactContainer .emailPhoneAddress {
+  width: 35%;
+}
+
+.contact .contactContainer .emailPhoneAddress span {
+  font-family: "Pompiere", cursive;
+  font-size: 3rem;
   font-weight: 400;
+  text-transform: uppercase;
+  padding: 30px 0;
+  display: block;
+}
+
+.contact .contactContainer .emailPhoneAddress p {
+  white-space: nowrap;
+}
+
+.contact .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-width: 65%;
+  margin-top: -40vh;
+}
+
+.contact .form form {
+  background-color: #FFFFFF;
+  padding: 50px;
+  display: block;
+  width: 100%;
+}
+
+.contact .form form input, .contact .form form textarea {
   font-size: 2rem;
+  padding: 10px;
+}
+
+.contact .form form input[type=text], .contact .form form input[type=email] {
+  width: calc(50% - 16px);
+  border: 0;
+  border-bottom: 2px solid #FE6F19;
+  margin: 0;
+}
+
+.contact .form form input[type=text] {
+  margin-right: 30px;
+}
+
+.contact .form form textarea {
+  display: block;
+  width: 100%;
+  height: 200px;
+  border: 2px solid #FE6F19;
+  margin: 50px 0;
+}
+
+.contact .form form button {
+  display: block;
+  width: 100%;
+  background-color: #882C07;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 20px 0;
+  border: 0;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
 
 p {
@@ -618,4 +735,17 @@ h2 {
 
 .instagram .instagramContainer .instagramImgContainer div:nth-of-type(3) {
   padding-right: 0;
+}
+
+footer {
+  width: 100%;
+  background-color: #882C07;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 2rem;
 }
