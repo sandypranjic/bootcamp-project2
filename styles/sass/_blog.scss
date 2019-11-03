@@ -62,6 +62,12 @@
             }
             .comments {
                 padding: 50px 0;
+                form {
+                    background-color: transparent;
+                    input, textarea {
+                        background-color: transparent;
+                    }
+                }
                 .comment {
                     display: flex;
                     flex-direction: row;
