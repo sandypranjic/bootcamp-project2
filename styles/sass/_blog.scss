@@ -6,6 +6,10 @@
 .blog {
     background-color: $pink;
     padding: 100px 0;
+    .wrapper {
+        margin-left: 10%;
+        width: auto;
+    }
     h4 {
         color: $black;
         font-family: $cursive;
@@ -28,8 +32,8 @@
         justify-content: space-between;
         align-items: flex-start;
         .recentPosts {
-            width: calc(30% - 50px);
-            margin-right: 50px;
+            width: 400px;
+            margin-right: 0px;
             background-color: $white;
             padding: 50px;
             p:first-of-type {
@@ -48,20 +52,60 @@
             }
         }
         .blogPosts {
-            width: 70%;
+            width: 100%;
             background-color: transparent;
             margin-top: -40vh;
+            margin-left: -50px;
             position: relative;
             z-index: 1000;
+            .blogPostsHeader {
+                padding-bottom: 100px;
+            }
             .post {
-                background-color: $white;
-                padding: 50px;
+                background-color: transparent;
                 p:first-of-type {
                     padding-top: 50px;
                 }
             }
+            .postText {
+                padding: 100px;
+                background-color: $white;
+            }
+            .blogPostImg {
+                width: calc(100% - 50px);
+                margin-top: -50px;
+                margin-left: 50px;
+                position: relative;
+                &::before {
+                    content: "";
+                    width: 50px;
+                    height: calc(100% - 50px);
+                    position: absolute;
+                    bottom: 0;
+                    left: -50px;
+                    background-color: $orange;
+                }
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 50px;
+                    position: absolute;
+                    bottom: -50px;
+                    left: -50px;
+                    background-color: $orange;
+                }
+                img {
+                    object-fit: cover;
+                    object-position: center;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    margin: 0;
+                }
+            }
             .comments {
                 padding: 50px 0;
+                width: 90%;
                 form {
                     background-color: transparent;
                     input, textarea {

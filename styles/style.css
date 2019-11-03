@@ -747,6 +747,11 @@ h2 {
   padding: 100px 0;
 }
 
+.blog .wrapper {
+  margin-left: 10%;
+  width: auto;
+}
+
 .blog h4 {
   color: #0D0D0D;
   font-family: "Pompiere", cursive;
@@ -782,8 +787,8 @@ h2 {
 }
 
 .blog .blogContainer .recentPosts {
-  width: calc(30% - 50px);
-  margin-right: 50px;
+  width: 400px;
+  margin-right: 0px;
   background-color: #FFFFFF;
   padding: 50px;
 }
@@ -806,24 +811,72 @@ h2 {
 }
 
 .blog .blogContainer .blogPosts {
-  width: 70%;
+  width: 100%;
   background-color: transparent;
   margin-top: -40vh;
+  margin-left: -50px;
   position: relative;
   z-index: 1000;
 }
 
+.blog .blogContainer .blogPosts .blogPostsHeader {
+  padding-bottom: 100px;
+}
+
 .blog .blogContainer .blogPosts .post {
-  background-color: #FFFFFF;
-  padding: 50px;
+  background-color: transparent;
 }
 
 .blog .blogContainer .blogPosts .post p:first-of-type {
   padding-top: 50px;
 }
 
+.blog .blogContainer .blogPosts .postText {
+  padding: 100px;
+  background-color: #FFFFFF;
+}
+
+.blog .blogContainer .blogPosts .blogPostImg {
+  width: calc(100% - 50px);
+  margin-top: -50px;
+  margin-left: 50px;
+  position: relative;
+}
+
+.blog .blogContainer .blogPosts .blogPostImg::before {
+  content: "";
+  width: 50px;
+  height: calc(100% - 50px);
+  position: absolute;
+  bottom: 0;
+  left: -50px;
+  background-color: #FE6F19;
+}
+
+.blog .blogContainer .blogPosts .blogPostImg::after {
+  content: "";
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  background-color: #FE6F19;
+}
+
+.blog .blogContainer .blogPosts .blogPostImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0;
+}
+
 .blog .blogContainer .blogPosts .comments {
   padding: 50px 0;
+  width: 90%;
 }
 
 .blog .blogContainer .blogPosts .comments form {
