@@ -556,7 +556,7 @@ h2 {
 
 .underTheSea {
   background-color: #FAE5FF;
-  padding: 100px 0;
+  padding: 150px 0;
   text-align: center;
 }
 
@@ -988,8 +988,8 @@ h2 {
 
 .popularThisMonth {
   background-color: #FFFFFF;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 15%;
+  padding-bottom: 100px;
 }
 
 @media (max-width: 500px) {
@@ -1041,6 +1041,10 @@ h2 {
   position: relative;
 }
 
+.popularThisMonth .popularThisMonthContainer .popularThisMonthImgContainer .popularThisMonthImg img {
+  display: block;
+}
+
 @media (max-width: 500px) {
   .popularThisMonth .popularThisMonthContainer .popularThisMonthImgContainer .popularThisMonthImg {
     margin: 0 -9px;
@@ -1055,7 +1059,12 @@ h2 {
   width: 20px;
   height: calc(100% - 20px);
   background-color: #FE6F19;
-  display: none;
+}
+
+@media (max-width: 500px) {
+  .popularThisMonth .popularThisMonthContainer .popularThisMonthImgContainer .popularThisMonthImg::before {
+    display: none;
+  }
 }
 
 .popularThisMonth .popularThisMonthContainer .popularThisMonthImgContainer .popularThisMonthImg::after {

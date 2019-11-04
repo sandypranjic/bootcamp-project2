@@ -19,7 +19,7 @@ h2 {
 
 .underTheSea {
     background-color: $pink;
-    padding: 100px 0;
+    padding: 150px 0;
     text-align: center;
     @include mobile {    
         padding: 20px 0;
@@ -293,8 +293,8 @@ h2 {
 
 .popularThisMonth {
     background-color: $white;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 15%;
+    padding-bottom: 100px;
     @include mobile {    
         padding-top: 0;
         padding-bottom: 25px;
@@ -315,6 +315,9 @@ h2 {
             }
             .popularThisMonthImg {
                 position: relative;
+                img {
+                    display: block;
+                }
                 @include mobile {    
                     margin: 0 -9px;
                 }
@@ -326,7 +329,9 @@ h2 {
                     width: 20px;
                     height: calc(100% - 20px);
                     background-color: $orange;
-                    display: none;
+                    @include mobile {    
+                        display: none;
+                    }
                 }
                 &::after {
                     content: "";
