@@ -21,6 +21,9 @@ h2 {
     background-color: $pink;
     padding: 100px 0;
     text-align: center;
+    @include mobile {    
+        padding: 20px 0;
+    }
     p {
         padding: 20px 0;
     }
@@ -161,7 +164,7 @@ h2 {
     @include mobile {    
         flex-direction: column;
         width: 100%;
-        padding: 10px;
+        padding: 25px 0;
     }
     .newAdditionsText, .tooManyOptionsText {
         width: 100%;
@@ -199,7 +202,7 @@ h2 {
     @include mobile {    
         text-align: center;
         width: 80%;
-        margin: 0 10%;
+        margin: 10px 10%;
     }
 }
 
@@ -207,6 +210,10 @@ h2 {
     padding-top: 100px;
     padding-bottom: 50px;
     background-color: $pink;
+    @include mobile {    
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 }
 
 .generalInfoContainer {
@@ -264,7 +271,7 @@ h2 {
                 padding-left: 20px;
                 @include mobile {    
                     width: 100%;
-                    padding: 0;
+                    padding-left: 10px;
                 }
             }
         }
@@ -288,6 +295,10 @@ h2 {
     background-color: $white;
     padding-top: 100px;
     padding-bottom: 50px;
+    @include mobile {    
+        padding-top: 0;
+        padding-bottom: 25px;
+    }
     .popularThisMonthContainer {
         display: flex;
         flex-direction: row;
@@ -304,6 +315,9 @@ h2 {
             }
             .popularThisMonthImg {
                 position: relative;
+                @include mobile {    
+                    margin: 0 -9px;
+                }
                 &::before {
                     content: "";
                     position: absolute;
@@ -332,7 +346,7 @@ h2 {
             padding-left: 100px;
             width: calc(75% - 100px);
             @include mobile {    
-                padding-left: 0;
+                padding: 20px 0;
                 width: 100%;
             }
         }
@@ -351,6 +365,9 @@ h2 {
         align-items: flex-start;
         .instagramImgContainer {
             width: calc(100% / 3 - 25px);
+            @include mobile {    
+                width: calc(100% / 3);
+            }
             div {
                 padding-right: 25px;
             }

@@ -560,6 +560,12 @@ h2 {
   text-align: center;
 }
 
+@media (max-width: 500px) {
+  .underTheSea {
+    padding: 20px 0;
+  }
+}
+
 .underTheSea p {
   padding: 20px 0;
 }
@@ -787,7 +793,7 @@ h2 {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    padding: 10px;
+    padding: 25px 0;
   }
 }
 
@@ -834,7 +840,7 @@ h2 {
   .readMore {
     text-align: center;
     width: 80%;
-    margin: 0 10%;
+    margin: 10px 10%;
   }
 }
 
@@ -842,6 +848,13 @@ h2 {
   padding-top: 100px;
   padding-bottom: 50px;
   background-color: #FAE5FF;
+}
+
+@media (max-width: 500px) {
+  .generalInfo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 
 .generalInfoContainer {
@@ -950,7 +963,7 @@ h2 {
 @media (max-width: 500px) {
   .generalInfoContainer .locations .generalInfoInnerContainer .generalInfoText, .generalInfoContainer .community .generalInfoInnerContainer .generalInfoText, .generalInfoContainer .homepageBlog .generalInfoInnerContainer .generalInfoText, .generalInfoContainer .getInTouch .generalInfoInnerContainer .generalInfoText {
     width: 100%;
-    padding: 0;
+    padding-left: 10px;
   }
 }
 
@@ -977,6 +990,13 @@ h2 {
   background-color: #FFFFFF;
   padding-top: 100px;
   padding-bottom: 50px;
+}
+
+@media (max-width: 500px) {
+  .popularThisMonth {
+    padding-top: 0;
+    padding-bottom: 25px;
+  }
 }
 
 .popularThisMonth .popularThisMonthContainer {
@@ -1021,6 +1041,12 @@ h2 {
   position: relative;
 }
 
+@media (max-width: 500px) {
+  .popularThisMonth .popularThisMonthContainer .popularThisMonthImgContainer .popularThisMonthImg {
+    margin: 0 -9px;
+  }
+}
+
 .popularThisMonth .popularThisMonthContainer .popularThisMonthImgContainer .popularThisMonthImg::before {
   content: "";
   position: absolute;
@@ -1055,7 +1081,7 @@ h2 {
 
 @media (max-width: 500px) {
   .popularThisMonth .popularThisMonthContainer .popularThisMonthTextContainer {
-    padding-left: 0;
+    padding: 20px 0;
     width: 100%;
   }
 }
@@ -1085,6 +1111,12 @@ h2 {
 
 .instagram .instagramContainer .instagramImgContainer {
   width: calc(100% / 3 - 25px);
+}
+
+@media (max-width: 500px) {
+  .instagram .instagramContainer .instagramImgContainer {
+    width: calc(100% / 3);
+  }
 }
 
 .instagram .instagramContainer .instagramImgContainer div {
