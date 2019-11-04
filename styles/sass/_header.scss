@@ -7,23 +7,21 @@
     position: relative;
 }
 
-.floatingImageContainer {
+.floatingImage {
     position: absolute;
     top: 10vh;
     right: 0;
-    // width: 100vw;
-    max-height: 10vh;    
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: flex-end;
-    // align-items: center;
+    height: 95vh;  
+    width: 60vw;  
 }
 
-.floatingImage {
-    // width: auto;
-    max-height: 100%;
-    object-fit: cover;
-    object-position: center;
+.floatingImageContainer {
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/home-box-header.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 .floatingImage img {
