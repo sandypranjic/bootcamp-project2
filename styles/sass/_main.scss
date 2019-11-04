@@ -31,15 +31,95 @@ h2 {
     font-size: 2rem;
 }
 
+.newAdditions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    .wrapper {
+        margin-right: 20%;
+        width: auto;
+    }
+    .newAdditionsImg {
+        width: 50%;
+        position: relative;
+        top: -50px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50px;
+            right: -50px;
+            height: calc(100% - 50px);
+            width: 50px;
+            background-color: $orange;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            width: 100%;
+            height: 50px;
+            background-color: $orange;
+        }
+        img {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+.tooManyOptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    .wrapper {
+        margin-left: 20%;
+        width: auto;
+    }
+    .tooManyOptionsImg {
+        width: 50%;
+        position: relative;
+        top: 50px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: -50px;
+            top: 50px;
+            height: calc(100% - 50px);
+            width: 50px;
+            background-color: $orange;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -50px;
+            left: -50px;
+            width: 100%;
+            height: 50px;
+            background-color: $orange;
+        }
+        img {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
 .newAdditionsContainer, .tooManyOptionsContainer {
-    width: 100%;
+    width: 50%;
     padding: 100px 0;
     background-color: $white;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     .newAdditionsText, .tooManyOptionsText {
-        width: 50%;
+        width: 100%;
         h4 {
             color: $black;
             font-family: $cursive;
@@ -49,6 +129,8 @@ h2 {
         }
     }
 }
+
+
 
 .newAdditionsContainer {
     justify-content: flex-end;
@@ -83,6 +165,7 @@ h2 {
     flex-wrap: wrap;
     .locations, .community, .blog, .getInTouch {
         width: 50%;
+        padding-top: 0;
         .generalInfoInnerContainer {
             display: flex;
             flex-direction: row;
@@ -130,6 +213,27 @@ h2 {
         align-items: flex-start;
         .popularThisMonthImgContainer {
             width: 25%;
+            .popularThisMonthImg {
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    right: -20px;
+                    width: 20px;
+                    height: calc(100% - 20px);
+                    background-color: $orange;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -20px;
+                    right: -20px;
+                    width: 100%;
+                    height: 20px;
+                    background-color: $orange;
+                }
+            }
         }
         .popularThisMonthTextContainer {
             padding-left: 100px;

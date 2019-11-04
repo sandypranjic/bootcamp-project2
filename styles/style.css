@@ -457,8 +457,120 @@ h2 {
   font-size: 2rem;
 }
 
-.newAdditionsContainer, .tooManyOptionsContainer {
+.newAdditions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.newAdditions .wrapper {
+  margin-right: 20%;
+  width: auto;
+}
+
+.newAdditions .newAdditionsImg {
+  width: 50%;
+  position: relative;
+  top: -50px;
+}
+
+.newAdditions .newAdditionsImg::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  right: -50px;
+  height: calc(100% - 50px);
+  width: 50px;
+  background-color: #FE6F19;
+}
+
+.newAdditions .newAdditionsImg::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
   width: 100%;
+  height: 50px;
+  background-color: #FE6F19;
+}
+
+.newAdditions .newAdditionsImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  display: block;
+}
+
+.tooManyOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.tooManyOptions .wrapper {
+  margin-left: 20%;
+  width: auto;
+}
+
+.tooManyOptions .tooManyOptionsImg {
+  width: 50%;
+  position: relative;
+  top: 50px;
+}
+
+.tooManyOptions .tooManyOptionsImg::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 50px;
+  height: calc(100% - 50px);
+  width: 50px;
+  background-color: #FE6F19;
+}
+
+.tooManyOptions .tooManyOptionsImg::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  width: 100%;
+  height: 50px;
+  background-color: #FE6F19;
+}
+
+.tooManyOptions .tooManyOptionsImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  display: block;
+}
+
+.newAdditionsContainer, .tooManyOptionsContainer {
+  width: 50%;
   padding: 100px 0;
   background-color: #FFFFFF;
   display: -webkit-box;
@@ -473,7 +585,7 @@ h2 {
 }
 
 .newAdditionsContainer .newAdditionsText, .newAdditionsContainer .tooManyOptionsText, .tooManyOptionsContainer .newAdditionsText, .tooManyOptionsContainer .tooManyOptionsText {
-  width: 50%;
+  width: 100%;
 }
 
 .newAdditionsContainer .newAdditionsText h4, .newAdditionsContainer .tooManyOptionsText h4, .tooManyOptionsContainer .newAdditionsText h4, .tooManyOptionsContainer .tooManyOptionsText h4 {
@@ -532,6 +644,7 @@ h2 {
 
 .generalInfoContainer .locations, .generalInfoContainer .community, .generalInfoContainer .blog, .generalInfoContainer .getInTouch {
   width: 50%;
+  padding-top: 0;
 }
 
 .generalInfoContainer .locations .generalInfoInnerContainer, .generalInfoContainer .community .generalInfoInnerContainer, .generalInfoContainer .blog .generalInfoInnerContainer, .generalInfoContainer .getInTouch .generalInfoInnerContainer {
@@ -609,6 +722,30 @@ h2 {
 
 .popularThisMonth .popularThisMonthContainer .popularThisMonthImgContainer {
   width: 25%;
+}
+
+.popularThisMonth .popularThisMonthContainer .popularThisMonthImgContainer .popularThisMonthImg {
+  position: relative;
+}
+
+.popularThisMonth .popularThisMonthContainer .popularThisMonthImgContainer .popularThisMonthImg::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+  width: 20px;
+  height: calc(100% - 20px);
+  background-color: #FE6F19;
+}
+
+.popularThisMonth .popularThisMonthContainer .popularThisMonthImgContainer .popularThisMonthImg::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 100%;
+  height: 20px;
+  background-color: #FE6F19;
 }
 
 .popularThisMonth .popularThisMonthContainer .popularThisMonthTextContainer {
