@@ -11,11 +11,15 @@ h2 {
     font-family: $cursive;
     font-size: 6rem;
     font-weight: $regular;
+    @include mobile {    
+        font-size: 4rem;
+        text-align: center;
+    }
 }
 
 .underTheSea {
     background-color: $pink;
-    padding: 13% 0;
+    padding: 100px 0;
     text-align: center;
     p {
         padding: 20px 0;
@@ -36,14 +40,26 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    @include mobile {    
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
     .wrapper {
         margin-right: 20%;
         width: auto;
+        @include mobile {    
+            margin: 0 10px;
+        }
     }
     .newAdditionsImg {
         width: 50%;
         position: relative;
         top: -50px;
+        @include mobile {    
+            width: 100%;
+            top: 0;
+        }
         &::before {
             content: "";
             position: absolute;
@@ -52,6 +68,9 @@ h2 {
             height: calc(100% - 50px);
             width: 50px;
             background-color: $orange;
+            @include mobile {    
+                display: none;
+            }
         }
         &::after {
             content: "";
@@ -61,6 +80,9 @@ h2 {
             width: 100%;
             height: 50px;
             background-color: $orange;
+            @include mobile {    
+                display: none;
+            }
         }
         img {
             object-fit: cover;
@@ -76,14 +98,26 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    @include mobile {    
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
     .wrapper {
         margin-left: 20%;
         width: auto;
+        @include mobile {    
+            margin: 0 10px;
+        }
     }
     .tooManyOptionsImg {
         width: 50%;
         position: relative;
         top: 50px;
+        @include mobile {    
+            width: 100%;
+            top: 0;
+        }
         &::before {
             content: "";
             position: absolute;
@@ -92,6 +126,9 @@ h2 {
             height: calc(100% - 50px);
             width: 50px;
             background-color: $orange;
+            @include mobile {    
+                display: none;
+            }
         }
         &::after {
             content: "";
@@ -101,6 +138,9 @@ h2 {
             width: 100%;
             height: 50px;
             background-color: $orange;
+            @include mobile {    
+                display: none;
+            }
         }
         img {
             object-fit: cover;
@@ -118,6 +158,11 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    @include mobile {    
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
     .newAdditionsText, .tooManyOptionsText {
         width: 100%;
         h4 {
@@ -126,6 +171,9 @@ h2 {
             font-size: 6rem;
             text-transform: uppercase;
             font-weight: $regular;
+            @include mobile {    
+                text-align: center;
+            }
         }
     }
 }
@@ -148,6 +196,11 @@ h2 {
     color: $white;
     background-color: $brown;
     font-size: 2rem;
+    @include mobile {    
+        text-align: center;
+        width: 80%;
+        margin: 0 10%;
+    }
 }
 
 .generalInfo {
@@ -163,13 +216,28 @@ h2 {
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    .locations, .community, .blog, .getInTouch {
+    @include mobile {    
+        flex-direction: column;
+     }
+    .locations, .community, .homepageBlog, .getInTouch {
         width: 50%;
         padding-top: 0;
+        h2 {
+            @include mobile {    
+                text-align: left;
+            }
+        }
+        @include mobile {    
+            width: 100%;
+            padding-bottom: 20px;
+        }
         .generalInfoInnerContainer {
             display: flex;
             flex-direction: row;
             padding: 25px;
+            @include mobile {    
+                padding: 0;
+            }
             .icon {
                 width: 60px;
                 height: 60px;
@@ -179,14 +247,25 @@ h2 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @include mobile {    
+                    width: 45px;
+                    height: 45px;
+                }
                 i {
                     font-size: 3.2rem;
                     color: $white;
+                    @include mobile {    
+                        font-size: 2rem;
+                    }
                 }
             }
             .generalInfoText {
                 width: calc(100% - 125px);
                 padding-left: 20px;
+                @include mobile {    
+                    width: 100%;
+                    padding: 0;
+                }
             }
         }
     }
@@ -194,6 +273,9 @@ h2 {
 
 .fullBleedShoes {
     width: 100vw;
+    @include mobile {    
+        display: none;
+    }
     img {
         object-position: center;
         object-fit: cover;
@@ -211,8 +293,15 @@ h2 {
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
+        @include mobile {    
+            flex-direction: column;
+            align-items: center;
+        }
         .popularThisMonthImgContainer {
             width: 25%;
+            @include mobile {    
+                width: 100%;
+            }
             .popularThisMonthImg {
                 position: relative;
                 &::before {
@@ -223,6 +312,7 @@ h2 {
                     width: 20px;
                     height: calc(100% - 20px);
                     background-color: $orange;
+                    display: none;
                 }
                 &::after {
                     content: "";
@@ -232,12 +322,19 @@ h2 {
                     width: 100%;
                     height: 20px;
                     background-color: $orange;
+                    @include mobile {    
+                        display: none;
+                    }
                 }
             }
         }
         .popularThisMonthTextContainer {
             padding-left: 100px;
             width: calc(75% - 100px);
+            @include mobile {    
+                padding-left: 0;
+                width: 100%;
+            }
         }
     }
 }

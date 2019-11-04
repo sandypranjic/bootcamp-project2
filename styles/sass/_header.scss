@@ -1,10 +1,15 @@
+@import "mediaQueries";
+
 .headerBackgroundContainer {
     width: 100vw;
     height: 80vh;
     background-image: url("../assets/header-image.jpg");
     background-size: cover;
-    background-position: cover;
+    background-position: center;
     position: relative;
+    @include mobile {    
+        height: 100vh;
+    }
 }
 
 .floatingImage {
@@ -12,7 +17,10 @@
     top: 10vh;
     right: 0;
     height: 95vh;  
-    width: 60vw;  
+    width: 60vw;
+    @include mobile {    
+        display: none; 
+     }
 }
 
 .floatingImageContainer {
@@ -39,12 +47,23 @@
     align-items: flex-start;
     flex-wrap: wrap;
     padding-top: 30px;
+    @include mobile {    
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    @include mobile {    
+        padding-top: 10px; 
+     }
 }
 
 .topNavList {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    @include mobile {    
+        display: none; 
+     }
 }
 
 .topNavList li a {
@@ -70,25 +89,65 @@ h1, h3 {
 h1 {
     font-size: 12rem;
     color: $plum;
+    span {
+        display: block;
+        line-height: 0.7;
+        @include mobile {
+            line-height: 1;
+        }
+    }
+    @include mobile {    
+        text-align: center; 
+        font-size: 9rem;
+        color: $white;
+    }
 }
 
 h3 {
     font-size: 4rem;
+    @include mobile {    
+        display: inline;
+    }
 }
 
 h3 span {
     display: block;
-}
-
-h1 span {
-    display: block;
-    line-height: 0.7;
+    @include mobile {    
+        display: inline;
+        color: $black;
+        // text-shadow: 0px 0px 5px $orange; 
+    }
 }
 
 .logoContainer, .topNav, .mainHeadingContainer {
     width: 50%;
+    @include mobile {    
+        width: 100%;
+    }
 }
+
+.logoContainer {
+    @include mobile {    
+        position: fixed;
+        margin-top: -10px;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 10px;
+    }
+    .burgerMenu {
+        display: none;
+        @include mobile {    
+            display: inline;
+            float: right;
+            font-size: 4rem;
+            color: $black;
+        }
+    }
+}
+
 
 .mainHeadingContainer {
     padding: 100px 0;
+    @include mobile {    
+        padding: calc(50% - 56px) 0;
+    }
 }
