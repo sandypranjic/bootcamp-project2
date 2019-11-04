@@ -73,30 +73,32 @@
                             <div class="commentsHeader">
                                 <h4>Comments:</h4>
                             </div>
-                            <div class="comment">
-                                <div class="userImg">
-                                    <img src="./assets/comment-1.jpg">
+                            <div class="commentsContainer">
+                                <div class="comment">
+                                    <div class="userImg">
+                                        <img src="./assets/comment-1.jpg">
+                                    </div>
+                                    <div class="userComment">
+                                        <span class="postDate">Tuesday, November 21st, 2019 by Jeremy</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, omnis laborum. Ex porro quos non sequi, ipsam minima voluptatem corrupti dolorem distinctio nihil impedit, mollitia, corporis iusto odio laboriosam voluptates?</p>
+                                    </div>
                                 </div>
-                                <div class="userComment">
-                                    <span class="postDate">Tuesday, November 21st, 2019 by Jeremy</span>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, omnis laborum. Ex porro quos non sequi, ipsam minima voluptatem corrupti dolorem distinctio nihil impedit, mollitia, corporis iusto odio laboriosam voluptates?</p>
-                                </div>
-                            </div>
-                            <div class="comment">
-                                <div class="userImg">
-                                    <img src="./assets/comment-2.jpg">
-                                </div>
-                                <div class="userComment">
-                                    <span class="postDate">Tuesday, November 21st, 2019 by Julia</span>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, omnis laborum. Ex porro quos non sequi, ipsam minima voluptatem corrupti dolorem distinctio nihil impedit, mollitia, corporis iusto odio laboriosam voluptates?</p>
+                                <div class="comment">
+                                    <div class="userImg">
+                                        <img src="./assets/comment-2.jpg">
+                                    </div>
+                                    <div class="userComment">
+                                        <span class="postDate">Tuesday, November 21st, 2019 by <span class="commenterName">Julia</span></span>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, omnis laborum. Ex porro quos non sequi, ipsam minima voluptatem corrupti dolorem distinctio nihil impedit, mollitia, corporis iusto odio laboriosam voluptates?</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form">
                                     <form>
-                                        <input type="text" name="name" value="Name" placeholder="Name">
+                                        <input type="text" class="commenterName" name="name" value="Name" placeholder="Name">
                                         <input type="email" name="email" value="Email" placeholder="Email" required>
                                         <textarea name="message" required></textarea>
-                                        <button type="submit">Submit</button>
+                                        <button type="submit" class="submitComment">Submit</button>
                                     </form>
                                 </div>
                         </div>
