@@ -19,7 +19,7 @@ h2 {
 
 .underTheSea {
     background-color: $pink;
-    padding: 150px 0;
+    padding: 15% 0 150px 0;
     text-align: center;
     @include mobile {    
         padding: 20px 0;
@@ -293,7 +293,7 @@ h2 {
 
 .popularThisMonth {
     background-color: $white;
-    padding-top: 15%;
+    padding-top: 100px;
     padding-bottom: 100px;
     @include mobile {    
         padding-top: 0;
