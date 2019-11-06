@@ -2,6 +2,8 @@
 
 // Stripping styles
 
+// I added focus states on all elements to help users with assistive technology navigate the page easier. However, the nav was getting the focus state with every click as well and it was really clashing with the design so I removed it there.
+
 *:focus {
     border: 2px solid $orange;
 }
