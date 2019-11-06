@@ -30,4 +30,20 @@
 
 $(function() {
     comment.init();
+    $(".burgerMenu").on("click", function() {
+        // $(".burgerNav").removeClass("activeBurger");
+        $(".burgerNav").removeClass("fadeOut");
+        $(".exit").removeClass("fadeOut");
+        $(".activeBurger").removeClass("fadeOut");
+        $(".burgerNav").addClass("activeBurger");
+        $(".burgerMenu").addClass("burgerMenuHidden");
+        $(".exit").addClass("exitActive");
+        $(".exitActive").removeClass("exit");
+    });
+    $(".exit").on("click", function() {
+        $(".burgerNav").addClass("fadeOut");
+        $(".exit").addClass("fadeOut");
+        $(".burgerNav").removeClass("activeBurger");
+        $(".burgerMenu").removeClass("burgerMenuHidden");
+    });
 });

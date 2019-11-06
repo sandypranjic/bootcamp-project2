@@ -11,7 +11,7 @@ h2 {
     font-family: $cursive;
     font-size: 6rem;
     font-weight: $regular;
-    @include mobile {    
+    @include mobileAndTablet {    
         font-size: 4rem;
         text-align: center;
     }
@@ -21,8 +21,8 @@ h2 {
     background-color: $pink;
     padding: 15% 0 150px 0;
     text-align: center;
-    @include mobile {    
-        padding: 20px 0;
+    @include mobileAndTablet {    
+        padding: 50px 0;
     }
     p {
         padding: 20px 0;
@@ -43,7 +43,7 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    @include mobile {    
+    @include mobileAndTablet {    
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -51,7 +51,10 @@ h2 {
     .wrapper {
         margin-right: 20%;
         width: auto;
-        @include mobile {    
+        @include smallerScreen {    
+            margin-right: 50px; 
+        }
+        @include mobileAndTablet {    
             margin: 0 10px;
         }
     }
@@ -59,9 +62,9 @@ h2 {
         width: 50%;
         position: relative;
         top: -50px;
-        @include mobile {    
+        @include mobileAndTablet {    
             width: 100%;
-            top: 0;
+            position: static;
         }
         &::before {
             content: "";
@@ -71,7 +74,7 @@ h2 {
             height: calc(100% - 50px);
             width: 50px;
             background-color: $orange;
-            @include mobile {    
+            @include mobileAndTablet {    
                 display: none;
             }
         }
@@ -83,7 +86,7 @@ h2 {
             width: 100%;
             height: 50px;
             background-color: $orange;
-            @include mobile {    
+            @include mobileAndTablet {    
                 display: none;
             }
         }
@@ -101,7 +104,7 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    @include mobile {    
+    @include mobileAndTablet {    
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -109,7 +112,10 @@ h2 {
     .wrapper {
         margin-left: 20%;
         width: auto;
-        @include mobile {    
+        @include smallerScreen {    
+            margin-left: 50px; 
+        }
+        @include mobileAndTablet {    
             margin: 0 10px;
         }
     }
@@ -117,9 +123,10 @@ h2 {
         width: 50%;
         position: relative;
         top: 50px;
-        @include mobile {    
+        @include mobileAndTablet {    
             width: 100%;
-            top: 0;
+            // top: 0;
+            position: static;
         }
         &::before {
             content: "";
@@ -129,7 +136,7 @@ h2 {
             height: calc(100% - 50px);
             width: 50px;
             background-color: $orange;
-            @include mobile {    
+            @include mobileAndTablet {    
                 display: none;
             }
         }
@@ -141,7 +148,7 @@ h2 {
             width: 100%;
             height: 50px;
             background-color: $orange;
-            @include mobile {    
+            @include mobileAndTablet {    
                 display: none;
             }
         }
@@ -161,10 +168,14 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    @include mobile {    
+    @include smallerScreen {    
+        width: 40%; 
+        padding: 50px 0;
+    }
+    @include mobileAndTablet {    
         flex-direction: column;
         width: 100%;
-        padding: 25px 0;
+        padding: 50px 0;
     }
     .newAdditionsText, .tooManyOptionsText {
         width: 100%;
@@ -174,7 +185,7 @@ h2 {
             font-size: 6rem;
             text-transform: uppercase;
             font-weight: $regular;
-            @include mobile {    
+            @include mobileAndTablet {    
                 text-align: center;
             }
         }
@@ -199,7 +210,7 @@ h2 {
     color: $white;
     background-color: $brown;
     font-size: 2rem;
-    @include mobile {    
+    @include mobileAndTablet {    
         text-align: center;
         width: 80%;
         margin: 10px 10%;
@@ -210,9 +221,8 @@ h2 {
     padding-top: 100px;
     padding-bottom: 50px;
     background-color: $pink;
-    @include mobile {    
-        padding-top: 25px;
-        padding-bottom: 25px;
+    @include mobileAndTablet {    
+        padding-top: 50px 0;
     }
 }
 
@@ -223,18 +233,18 @@ h2 {
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    @include mobile {    
+    @include mobileAndTablet {    
         flex-direction: column;
-     }
+    }
     .locations, .community, .homepageBlog, .getInTouch {
         width: 50%;
         padding-top: 0;
         h2 {
-            @include mobile {    
+            @include mobileAndTablet {    
                 text-align: left;
             }
         }
-        @include mobile {    
+        @include mobileAndTablet {    
             width: 100%;
             padding-bottom: 20px;
         }
@@ -242,7 +252,10 @@ h2 {
             display: flex;
             flex-direction: row;
             padding: 25px;
-            @include mobile {    
+            @include smallerScreen {    
+                padding: 10px; 
+            }
+            @include mobileAndTablet {    
                 padding: 0;
             }
             .icon {
@@ -254,14 +267,14 @@ h2 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                @include mobile {    
+                @include mobileAndTablet {    
                     width: 45px;
                     height: 45px;
                 }
                 i {
                     font-size: 3.2rem;
                     color: $white;
-                    @include mobile {    
+                    @include mobileAndTablet {    
                         font-size: 2rem;
                     }
                 }
@@ -269,7 +282,7 @@ h2 {
             .generalInfoText {
                 width: calc(100% - 125px);
                 padding-left: 20px;
-                @include mobile {    
+                @include mobileAndTablet {    
                     width: 100%;
                     padding-left: 10px;
                 }
@@ -280,7 +293,7 @@ h2 {
 
 .fullBleedShoes {
     width: 100vw;
-    @include mobile {    
+    @include mobileAndTablet {    
         display: none;
     }
     img {
@@ -293,9 +306,11 @@ h2 {
 
 .popularThisMonth {
     background-color: $white;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    @include mobile {    
+    padding: 100px 0;
+    @include smallerScreen {    
+        padding: 50px 0;
+    }
+    @include mobileAndTablet {    
         padding-top: 0;
         padding-bottom: 25px;
     }
@@ -304,22 +319,25 @@ h2 {
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
-        @include mobile {    
+        @include mobileAndTablet {    
             flex-direction: column;
             align-items: center;
         }
         .popularThisMonthImgContainer {
             width: 25%;
-            @include mobile {    
+            @include mobileAndTablet {    
                 width: 100%;
             }
             .popularThisMonthImg {
                 position: relative;
+                @include mobileAndTablet {    
+                    position: static;
+                }
                 img {
                     display: block;
                 }
-                @include mobile {    
-                    margin: 0 -9px;
+                @include mobileAndTablet {    
+                    margin: 0 -10px;
                 }
                 &::before {
                     content: "";
@@ -329,7 +347,7 @@ h2 {
                     width: 20px;
                     height: calc(100% - 20px);
                     background-color: $orange;
-                    @include mobile {    
+                    @include mobileAndTablet {    
                         display: none;
                     }
                 }
@@ -341,16 +359,20 @@ h2 {
                     width: 100%;
                     height: 20px;
                     background-color: $orange;
-                    @include mobile {    
+                    @include mobileAndTablet {    
                         display: none;
                     }
                 }
             }
         }
+
         .popularThisMonthTextContainer {
             padding-left: 100px;
             width: calc(75% - 100px);
-            @include mobile {    
+            @include smallerScreen {    
+                width: 100%;
+            }
+            @include mobileAndTablet {    
                 padding: 20px 0;
                 width: 100%;
             }
@@ -370,7 +392,25 @@ h2 {
         align-items: flex-start;
         .instagramImgContainer {
             width: calc(100% / 3 - 25px);
-            @include mobile {    
+            position: relative;
+            .instagramHover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.5);
+                color: $white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20rem;
+                opacity: 0;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            @include mobileAndTablet {    
                 width: calc(100% / 3);
             }
             div {

@@ -30,7 +30,11 @@ html {
 .wrapper {
     width: 80%;
     margin: 0 10%;
-    @include mobile {    
+    @include smallerScreen {    
+        width: 90%;
+        margin: 0 5%; 
+    }
+    @include mobileAndTablet {    
         width: 95%;
         margin: 0 2.5%;
     }
