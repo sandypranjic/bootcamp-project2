@@ -2,6 +2,10 @@
 
 // Stripping styles
 
+*:focus {
+    border: 2px solid $orange;
+}
+
 body, h1, h2, h3, h4, div, p, span, article, aside, section, img, ul, li {
     margin: 0;
     padding: 0;
@@ -11,7 +15,6 @@ img {
     width: 100%;
     height: auto;
 }
-
 
 li {
     list-style: none;

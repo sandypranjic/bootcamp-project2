@@ -53,13 +53,6 @@
     display: none;
 }
 
-// .exitActive {
-//     display: block;
-//     // float: right;
-//     font-size: 4rem;
-//     color: $white;
-// }
-
 .floatingImage {
     position: absolute;
     top: 10vh;
@@ -68,10 +61,10 @@
     width: 60vw;
     @include smallerScreen {    
         width: 50vw; 
-     }
+    }
     @include mobileAndTablet {    
         display: none; 
-     }
+    }
 }
 
 .floatingImageContainer {
@@ -205,12 +198,13 @@ h3 span {
     }
 }
 
-
-
 .mainHeadingContainer {
     padding: 100px 0;
-    @include mobileAndTablet {    
+    @include smallerScreen {    
         padding: 100px;
+    }
+    @include mobileAndTablet {    
+        padding: 100px 0;
     }
 }
 

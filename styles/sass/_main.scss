@@ -192,11 +192,8 @@ h2 {
     }
 }
 
-
-
 .newAdditionsContainer {
     justify-content: flex-end;
-
 }
 
 .tooManyOptionsContainer {
@@ -406,8 +403,11 @@ h2 {
                 align-items: center;
                 font-size: 20rem;
                 opacity: 0;
-                &:hover {
+                &:hover, &:focus {
                     opacity: 1;
+                }
+                a i {
+                    color: $white;
                 }
             }
             @include mobileAndTablet {    

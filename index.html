@@ -31,18 +31,18 @@
                             <i class="fas fa-times"></i>
                         </div>
                         <ul class="mobileBurgerNav">
-                            <li><a href="#">Home</a></li>
+                            <li><a href="./index.html">Home</a></li>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
                         </ul>
                     </nav>
                     <nav class="topNav">
                         <ul class="topNavList">
-                            <li><a href="#">Home</a></li>
+                            <li><a href="./index.html">Home</a></li>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
                         </ul>
                     </nav>
 
@@ -79,7 +79,7 @@
 
         <section class="newAdditions">
             <div class="newAdditionsImg">
-                <img src="./assets/left-image.jpg" alt="">
+                <img src="./assets/left-image.jpg" alt="White Nike Air shoes with dried flowers.">
             </div>
             <div class="newAdditionsContainer">
                 <div class="wrapper">
@@ -107,7 +107,7 @@
                 </div>
             </div>
             <div class="tooManyOptionsImg">
-                <img src="./assets/right-image.jpg" alt="">
+                <img src="./assets/right-image.jpg" alt="An assortment of light brown and beige-coloured heels.">
             </div>
         </section>
 
@@ -181,7 +181,7 @@
                 <div class="popularThisMonthContainer">
                     <div class="popularThisMonthImgContainer">
                         <div class="popularThisMonthImg">
-                            <img src="./assets/square-image.jpg" alt="">
+                            <img src="./assets/square-image.jpg" alt="Black high-heeled wedges on a white faux fur rug.">
                         </div>
                     </div>
         
@@ -197,27 +197,38 @@
         <!-- end of popularThisMonth section -->
         </section>
 
+        <!-- The following images have a hover on them that shows the Instagram logo and would hypothetically have a link to the company's Instagram page. However, the hover effect wasn't working when navigating the page using tab because divs aren't normally in the tabIndex, so I added tabIndex="0" so users with assistive technology would have the same experience. -->
+
         <section class="instagram">
             <div class="wrapper">
                 <div class="instagramContainer">
                     <div class="instagramImgContainer">
-                        <img src="assets/gallery-image-1.jpg" alt="">
-                        <div class="instagramHover">
-                            <i class="fab fa-instagram"></i>
+                        <img src="assets/gallery-image-1.jpg" alt="Person dangling feet off side of a building and wearing yellow shoes.">
+                        <div class="instagramHover" tabindex="0">
+                            <span class="sr-only">Click the following link to see this image on Instagram.</span>
+                            <a href="#" target="blank" alt="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="instagramImgContainer">
-                        <img src="assets/gallery-image-2.jpg" alt="">
-                        <div class="instagramHover">
-                            <i class="fab fa-instagram"></i>
+                        <img src="assets/gallery-image-2.jpg" alt="Image of multi-coloured shoes on a shoe rack outside of a store.">
+                        <div class="instagramHover" tabindex="0">
+                            <span class="sr-only">Click the following link to see this image on Instagram.</span>
+                            <a href="#" target="blank" alt="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="instagramImgContainer">
-                        <img src="assets/gallery-image-3.jpg" alt="">
-                        <div class="instagramHover">
-                            <i class="fab fa-instagram"></i>
+                        <img src="assets/gallery-image-3.jpg" alt="Image of brown pleather boots with a small heel.">
+                            <div class="instagramHover" tabindex="0">
+                                <span class="sr-only">Click the following link to see this image on Instagram.</span>
+                                <a href="#" target="blank" alt="">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
                 <!-- end of instagramContainer -->
                 </div>
             <!-- end of wrapper -->

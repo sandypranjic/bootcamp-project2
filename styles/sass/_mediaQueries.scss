@@ -1,3 +1,7 @@
+@mixin smallLaptop {
+    @media (max-width: 1490px) { @content; }
+}
+
 @mixin smallerScreen {
     @media (max-width: 1250px) { @content; }
 }
